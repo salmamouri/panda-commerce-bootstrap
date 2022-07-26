@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Commerce</title>
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
    <header class="container">
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="" >
@@ -23,13 +25,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Bagpack</a>
+                <a class="nav-link" href="#bagpack">Bagpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
               
               
@@ -43,14 +45,14 @@
       <section class="mt-5">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active border rounded bg-info ps-5">
+              <div class="carousel-item active border rounded panda-bg-info ps-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center ">
                     <div>
                         <h2>Cool Dude Headphone</h2>
                         <p>This the best headphone in the world foe people who just want to waste time in front of funky world.</p>
                         <h1>$420</h1>
-                        <div class="btn btn-primary">Buy Now</div>
+                        <div class="btn panda-btn-buy-now">Buy Now</div>
                     </div>
                     </div>
                     <div class="col-lg-5">
@@ -58,14 +60,14 @@
                     </div>
                 </div>
               </div>
-              <div class="carousel-item active border rounded bg-info ps-5">
+              <div class="carousel-item active border rounded panda-bg-info ps-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center ">
                     <div>
                         <h2>Mi LED TV 4A PRO 32</h2>
                         <p>This the best headphone in the world foe people who just want to waste time in front of funky world.</p>
                         <h1>$1200</h1>
-                        <div class="btn btn-primary">Buy Now</div>
+                        <div class="btn panda-btn-buy-now">Buy Now</div>
                     </div>
                     </div>
                     <div class="col-lg-5">
@@ -73,14 +75,14 @@
                     </div>
                 </div>
               </div>
-              <div class="carousel-item active border rounded bg-info ps-5">
+              <div class="carousel-item active border rounded panda-bg-info ps-5">
                 <div class="row">
                     <div class="col-lg-7 d-flex align-items-center ">
                     <div>
                         <h2>X-box for your Living Room</h2>
                         <p>This the best headphone in the world foe people who just want to waste time in front of funky world.</p>
                         <h1>$420</h1>
-                        <div class="btn btn-primary">Buy Now</div>
+                        <div class="btn panda-btn-buy-now">Buy Now</div>
                     </div>
                     </div>
                     <div class="col-lg-5">
@@ -106,7 +108,7 @@
     <!-- -----catagories Start ------->
     <section>
         <div class="container text-center my-5">
-            <div class="row g-2">
+            <div class="row g-4 catagories">
               <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div class="p-3 border bg-warning d-flex align-items-center justify-content-around rounded-4">
                     <h1>Watch</h1>
@@ -114,7 +116,7 @@
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                <div class="p-3 border bg-info d-flex align-items-center justify-content-around rounded-4">
+                <div class="p-3 border bg-danger d-flex align-items-center justify-content-around rounded-4">
                     <h1>Bag</h1>
                     <img src="images/categories/bag.png" alt="">
                 </div>
@@ -134,7 +136,7 @@
 
     <!-- ---------Shoes section Start -->
 
-    <section class="container mb-5">
+    <section class="container mb-5" id="shoes">
         <h2>Shoes</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -146,7 +148,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class=" m-3">
-                  <div class="btn btn-warning">Buy Now</div>
+                  <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
@@ -159,7 +161,7 @@
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                   </div>
               </div>
             </div>
@@ -172,7 +174,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                   </div>
               </div>
             </div>
@@ -183,7 +185,7 @@
 
     <!-- ----------Bagpack section start------- -->
 
-    <section class="container mb-5">
+    <section class="container mb-5" id="bagpack">
         <h2>Bagpack</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -195,7 +197,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
                 <div class=" m-3">
-                  <div class="btn btn-warning">Buy Now</div>
+                  <div class="btn panda-btn-buy-now">Buy Now</div>
                 </div>
               </div>
             </div>
@@ -208,7 +210,7 @@
                   <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                   </div>
               </div>
             </div>
@@ -221,7 +223,7 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                 </div>
                 <div class="m-3">
-                    <div class="btn btn-warning">Buy Now</div>
+                    <div class="btn panda-btn-buy-now">Buy Now</div>
                   </div>
               </div>
             </div>
@@ -229,7 +231,30 @@
 
     </section>
     <!-- ----------Bagpack section End------- -->
+
+    <!-- -------- Subscribe section -->
+
+    <section style="height:300px;" class="container mt-5 rounded-3 d-flex justify-content-center align-items-center panda-bg-info ">
+        <div class="m-5">
+            <h2>LET'S STAY IN TOUCH</h2>
+        <p>Get updates on sales specials and more</p>
+        <form>
+            <div class="mb-1">
+              
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+           
+            
+            <button type="submit" class="btn panda-btn-buy-now">Submit</button>
+          </form>
+        </div>
+        
+    </section>
    </main>
+   <footer class="mt-5 text-center">
+    <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+   </footer>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
